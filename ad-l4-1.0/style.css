@@ -1,0 +1,103 @@
+<<<<<<< HEAD
+html {  /* html = establece el ancho y altutra de la pagina */
+=======
+html {
+>>>>>>> 8002e7be77e3cc811fc97dc7d801c45396c9a0bb
+    height: 100%;
+    width: 100%;
+  }
+
+  footer p{
+    display: inline-block;
+    margin: 5%;
+    }
+  
+    body {
+      background-color: #13cec5;
+      font-family: Arial, sans-serif; 
+    }
+    
+    header {
+      background-color: #ffffff;
+      color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header .logo {
+      width: 150px;  /* Ajusta el tamaño del logo */
+      height: auto;  /* Mantén la proporción original */
+      margin-bottom: 10px; /* Espacio debajo del logo */
+    }
+    
+    /* Estilo para la imagen principal */
+    .main-image {
+      width: 100%;  /* Hace que la imagen ocupe todo el ancho del contenedor */
+      max-width: 800px; /* Limita el ancho máximo de la imagen */
+      height: auto;  /* Mantiene la proporción de la imagen */
+      border-radius: 8px;  /* Redondea las esquinas de la imagen */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  /* Agrega una sombra sutil */
+      display: block;  /* Asegura que la imagen se muestre como bloque */
+      margin: 20px auto;  /* Centra la imagen y agrega espacio alrededor */
+    }    
+    
+    h1 {
+      font-size: 36px;
+    }
+    
+    .content {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
+    
+    .left {
+      width: 30%;
+      padding: 20px;
+    }
+    
+    .right {
+      width: 40%;
+      padding: 20px;
+    }
+    
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    
+    footer {
+      background-color: #8D6E63;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  /* Logo en el encabezado */
+  header .logo {
+    width: 150px;  /* Ajusta el tamaño del logo */
+    height: auto;  /* Mantén la proporción original */
+    margin-bottom: 10px; /* Espacio debajo del logo */
+}
+
+  /* Responsividad */
+  @media (max-width: 768px) {
+  .content {
+    flex-direction: column;  /* Apila las columnas en pantallas pequeñas */
+    }
+
+  .left, .right {
+    width: 100%;  /* Las columnas ocupan todo el ancho */
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;  /* Ajusta el tamaño de los encabezados en móviles */
+  }
+}
+=======
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
