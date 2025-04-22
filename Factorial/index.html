@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Factorial en DOM</title>
+</head>
+<body>
+  <h1>Calculadora de Factorial</h1>
+  <input type="text" id="numero" placeholder="Ingresa un número">
+  <button onclick="calcular()">Calcular</button>
+  <p id="resultado"></p>
+
+  <script>
+    function calcularFactorial(num) {
+      if (typeof num !== 'number' || isNaN(num) || num < 0) {
+        throw new Error("Debe ingresar un número entero no negativo.");
+      }
+      if (num === 0 || num === 1) return 1;
+      return num * calcularFactorial(num - 1);
+    }
+
+    function calcular() {
+      const input = document.getElementById("numero").value;
+      const numero = Number(input);
+      const resultado = document.getElementById("resultado");
+
+      try {
+        const factorial = calcularFactorial(numero);
+        resultado.textContent = `El factorial de ${numero} es ${factorial}`;
+      } catch (error) {
+        resultado.textContent = error.message;
+      }
+    }
+  </script>
+</body>
+</html>
